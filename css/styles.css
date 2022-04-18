@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap');
+
+:root {
+  --primary-color: #DB3E38;
+  --secondary-color: #1B1818;
+  --ff-body: 'Montserrat', sans-serif;
+  --ff-heading: 'Roboto Slab', serif;
+  --fs-xl: clamp(2.5rem, 7vw + 1rem, 6rem);
+  --fs-600: 2rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+  overflow-x: hidden;
+  min-width: 14rem;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-heading);
+  color: var(--secondary-color);
+}
+
+h1 {
+  font-size: var(--fs-600);
+}
