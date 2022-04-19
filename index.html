@@ -15,37 +15,46 @@
 
 <body>
   <div class="wrapper">
+    <!-- VERTICAL SLIDER -->
     <div class="container">
       <h1 class="section-title">Vertical Slider</h1>
       <section id="vertical-slider" class="flex">
-        <div class="slide-left">
-          <div id="new-york-city-content">
-            <h3>New York City, USA</h3>
+        <div class="left-slide">
+          <div id="new-york-city" class="flex slide-content" style="background-color: #252e33">
+            <h2>New York City, USA</h2>
             <p>Sunset with a view of the Brooklyn Bridge</p>
           </div>
-          <div id="los-angeles-content">
-            <h3>Los Angeles, USA</h3>
+          <div id="los-angeles" class="flex slide-content" style="background-color: #f4ad72">
+            <h2>Los Angeles, USA</h2>
             <p>View from the observation deck at city hall</p>
           </div>
-          <div id="montreal-content">
-            <h3>Montreal, CA</h3>
-            <p>Red City</p>
+          <div id="montreal" class="flex slide-content" style="background-color: #b34a5c">
+            <h2>Montreal, CA</h2>
+            <p>Red City <br> The city of festivals</p>
           </div>
-          <div id="minato-content">
-            <h3>Minato, JP</h3>
-            <p>A special ward in Tokyo</p>
+          <div id="tokyo" class="flex slide-content" style="background-color: #0ba2b3">
+            <h2>Tokyo, JP</h2>
+            <p>The world's largest<br>metropolis</p>
           </div>
-          <div id="toronto-content">
-            <h3>Toronto, CA</h3>
+          <div id="toronto" class="flex slide-content" style="background-color: #c2c6d3">
+            <h2>Toronto, CA</h2>
             <p>Financial district</p>
           </div>
         </div>
-        <div class="slide-right">
-          <div id="new-york-city-background"></div>
-          <div id="los-angeles-background"></div>
-          <div id="montreal-background"></div>
-          <div id="minato-background"></div>
-          <div id="toronto-background"></div>
+        <div class="right-slide">
+          <div id="toronto-background" style="background-image: url(../img/vertical-slider/toronto.jpg)"></div>
+          <div id="tokyo-background" style="background-image: url(../img/vertical-slider/tokyo.jpg)"></div>
+          <div id="montreal-background" style="background-image: url(../img/vertical-slider/montreal.jpg)"></div>
+          <div id="los-angeles-background" style="background-image: url(../img/vertical-slider/los-angeles.jpg)"></div>
+          <div id="new-york-city-background" style="background-image: url(../img/vertical-slider/new-york.jpg)"></div>
+        </div>
+        <div class="slide-buttons">
+          <button id="slide-up">
+            <i class="fas fa-arrow-up"></i>
+          </button>
+          <button id="slide-down">
+            <i class="fas fa-arrow-down"></i>
+          </button>
         </div>
       </section>
     </div>

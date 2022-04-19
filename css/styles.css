@@ -9,6 +9,7 @@
   --fs-600: 2rem;
   --fs-500: 1.25rem;
   --fs-400: 1rem;
+  --slides: 5;
 }
 
 *,
@@ -59,73 +60,65 @@ h1 {
 
 .wrapper {
   padding-block: min(6vh, 6rem);
-  padding-inline: clamp(2rem, 10%, 15rem);
-  border: 1px solid black;
+  padding-inline: clamp(2rem, 10%, 15rem);  
 }
 
-.container {
-  border: 1px solid red;
+
+/*************** VERTICAL SLIDER ***************/
+#vertical-slider{
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
 }
 
-section {
-  border: 1px solid green;
-}
-
-/* Vertical Slider */
-.slide-left {
+.left-slide {
+  width: 35%;
   height: 100%;
   color: #fff;
+  transition: transform 500ms ease-in-out; 
 }
 
-#new-york-city-content {
-  background-color: #252e33;
+.left-slide > div {
+  width: 100%;
   height: 100%;
 }
 
-#los-angeles-content {
-  background-color: #f4ad72;
+.slide-content {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;;
 }
 
-#montreal-content {
-  background-color: #b34a5c;
+.slide-content h2 {
+  margin-bottom: 1rem;
 }
 
-#minato-content {
-  background-color: #0a5d72;
-}
-
-#toronto-content {
-  background-color: #8b95a3;
-}
-
-.slide-right {
+.right-slide {
   width: 65%;
-  /* height: 100%; */
+  height: 100%;
+  transform: translateY(calc(calc(var(--slides) - 1) * (-80vh)));
+  transition: transform 500ms ease-in-out; 
 }
-.slide-right > div {
+
+.right-slide > div {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center center;  
 }
 
-#new-york-city-background {
-  background-image: url('../img/vertical-slider/new-york.jpg');
+
+/* 
+#slide-up {
+  position: absolute;
+  top: 47%;
+  left: 35%;
 }
 
-#los-angeles-background {
-  background-image: url('../img/vertical-slider/los-angeles.jpg');
-}
-
-#montreal-background {
-  background-image: url('../img/vertical-slider/montreal.jpg');
-}
-
-#minato-background {
-  background-image: url('../img/vertical-slider/minato.jpg');
-}
-
-#toronto-background {
-  background-image: url('../img/vertical-slider/toranto.jpg');
-}
+#slide-down {
+  position: absolute;
+  top: 53%;
+  left: 31.5%;
+} */
