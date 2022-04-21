@@ -2,5 +2,6 @@
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "cSpell.words": [
     "minato"
-  ]
+  ],
+  "liveServer.settings.multiRootWorkspaceName": "20-mini-js-projects"
 }

@@ -55,14 +55,26 @@ h6 {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .wrapper {
   padding-block: min(6vh, 6rem);
   padding-inline: clamp(1rem, 5%, 15rem);
 }
 
+.container {
+  padding-block: min(6vh, 6rem);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
 h1.section-title {
-  font-size: var(--fs-500);
   margin-bottom: 0.5rem;
+  font-size: var(--fs-500);
+  text-transform: uppercase;
+  width: fit-content;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .sub-title {
@@ -71,6 +83,11 @@ h1.section-title {
   margin-bottom: 2rem;
 }
 
+.note {
+  font-size: 0.7rem;
+  color: #4a4a4a;
+  margin-top: 1rem;
+}
 /********** Vertical Slider **********/
 #vertical-slider {
   width: 100%;
@@ -129,7 +146,7 @@ h1.section-title {
   position: absolute;
   top: 0;
   bottom: 0;
-  background-color: #fff;  
+  background-color: #fff;
   border: none;
   font-size: 1rem;
   opacity: 0;
@@ -137,7 +154,8 @@ h1.section-title {
   z-index: 1000;
 }
 
-#slide-up, #slide-down {
+#slide-up,
+#slide-down {
   width: 50%;
 }
 
@@ -158,6 +176,38 @@ h1.section-title {
   color: var(--secondary-color);
 }
 
+/********** Hoverboard **********/
+ #hoverboard {  
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; 
+}
+
+#hoverboard .board {
+  max-width: 600px;
+  max-height: 85%;
+  padding-inline: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.square {
+  width: 1rem;
+  aspect-ratio: 1;
+  background-color: #1d1d1d;
+  transition: 2s ease;
+  box-shadow: 0 0 2px #000;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
+
+
 /*************** Larger than mobile ***************/
 @media (min-width: 35em) {
   h1.section-title {
@@ -175,14 +225,18 @@ h1.section-title {
 
   .right-slide {
     width: 65%;
-  }  
+  }
 
   #slide-down {
     width: 35%;
   }
-  #slide-up  {
+
+  #slide-up {
     width: 65%;
   }
+
+  /********** Hoverboard **********/
+
 }
 
 /*************** Tablet ***************/
@@ -192,7 +246,6 @@ h1.section-title {
     --fs-500: 1.3rem;
     --fs-400: 1.1rem;
   }
-  /********** Vertical Slider **********/
 }
 
 /*************** Desktop ***************/
@@ -202,6 +255,7 @@ h1.section-title {
     --fs-500: 1.5rem;
     --fs-400: 1.125rem;
   }
+
   /********** Vertical Slider **********/
   .slide-content h2 {
     font-size: var(--fs-600);
@@ -214,4 +268,7 @@ h1.section-title {
   .slider-buttons button {
     padding: 1rem;
   }
+
+  /********** Hoverboard **********/
+
 }
