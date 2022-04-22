@@ -60,13 +60,21 @@ h6 {
 }
 
 .wrapper {
-  padding-block: min(6vh, 6rem);
-  padding-inline: clamp(1rem, 5%, 15rem);
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll; 
 }
 
 .container {
-  padding-block: min(6vh, 6rem);
-  border-bottom: 2px solid var(--secondary-color);
+  height: 100vh;
+  width: 95vw;
+  scroll-snap-align: start;
+  /* padding-block: min(6vh, 6rem); */
+  margin: 0 auto;  
+}
+
+section {
+  height: 80vh;
 }
 
 h1.section-title {
@@ -80,18 +88,17 @@ h1.section-title {
 .sub-title {
   font-size: 0.9rem;
   color: #4a4a4a;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .note {
   font-size: 0.7rem;
   color: #4a4a4a;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 /********** Vertical Slider **********/
 #vertical-slider {
-  width: 100%;
-  height: 80vh;
+  width: 100%;  
   position: relative;
   overflow: hidden;
 }
@@ -177,8 +184,7 @@ h1.section-title {
 }
 
 /********** Hoverboard **********/
- #hoverboard {  
-  height: 80vh;
+ #hoverboard {    
   justify-content: center;
   align-items: center;
   background-color: #000; 
