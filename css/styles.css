@@ -71,7 +71,7 @@ h6 {
 
 h1.section-title {
   margin-bottom: 0.5rem;
-  font-size: var(--fs-500);
+  font-size: var(--fs-600);
   text-transform: uppercase;
   width: fit-content;
   border-bottom: 2px solid var(--primary-color);
@@ -257,9 +257,9 @@ h1.section-title {
   }
 
   /********** Vertical Slider **********/
-  .slide-content h2 {
+  /* .slide-content h2 {
     font-size: var(--fs-600);
-  }
+  } */
 
   .slide-content p {
     font-size: var(--fs-500);
