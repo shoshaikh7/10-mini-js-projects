@@ -72,7 +72,7 @@
       <h1 class="section-title">Hoverboard</h1>
       <p class="sub-title">Hover to see the cool effect on the board</p>
       <section id="hoverboard" class="flex">
-        <div class="board flex"></div>        
+        <div class="board flex"></div>
       </section>
       <p class="note">Inspired by Wes Bos' 50 projects in 50 days course</p>
     </div>
@@ -80,9 +80,35 @@
     <!-- DIGITAL CLOCK -->
     <div class="container">
       <h1 class="section-title">Digital Clock</h1>
-      <p class="sub-title">Just another digital clock with a cool animation using SVGs</p>
-      <section id="digita-clock" class="flex">
-        
+      <p class="sub-title">Simple digital clock with a cool animation using SVGs</p>
+      <section id="digital-clock" class="flex">
+        <div class="circle-container flex" style="--stroke-color: #ff0f80;">
+          <div class="dots" id="hours-dot"></div>
+          <svg class="circles" viewBox="-3 -3 105 105">
+            <circle cx="50" cy="50" r="50" />
+            <circle id="hours-circle" cx="50" cy="50" r="50" />
+          </svg>
+          <div id="hours">00</div>
+        </div>
+        <div class="circle-container flex" style="--stroke-color: #00ccff;">
+          <div class="dots" id="minutes-dot"></div>
+          <svg class="circles" viewBox="-3 -3 105 105">
+            <circle cx="50" cy="50" r="50" />
+            <circle id="minutes-circle" cx="50" cy="50" r="50" />
+          </svg>
+          <div id="minutes">00</div>
+        </div>
+        <div class="circle-container flex" style="--stroke-color: #00ffcc;">
+          <div class="dots" id="seconds-dot"></div>
+          <svg class="circles" viewBox="-3 -3 105 105">
+            <circle cx="50" cy="50" r="50" />
+            <circle id="seconds-circle" cx="50" cy="50" r="50" />
+          </svg>
+          <div id="seconds">00</div>
+        </div>
+        <div class="ampm-container flex">
+          <div id="ampm"></div>
+        </div>
       </section>
     </div>
   </div>

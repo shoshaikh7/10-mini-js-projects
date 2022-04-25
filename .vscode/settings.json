@@ -3,5 +3,8 @@
   "cSpell.words": [
     "minato"
   ],
-  "liveServer.settings.multiRootWorkspaceName": "20-mini-js-projects"
+  "liveServer.settings.multiRootWorkspaceName": "20-mini-js-projects",
+  "cSpell.ignoreWords": [
+    "ampm"
+  ]
 }
